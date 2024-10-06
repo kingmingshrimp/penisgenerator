@@ -1,19 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main()
 {
 
-  int penisSize = 4;
+  char *penisSize[] = {"small\0", "medium\0", "large\0", "strange\0"};
 
-  //mfw anvil 
-  printf("AGHHHHHHHhhhhhhhhhhhhhhhhhhhhhhhhHHHHH \n");
-  printf("my peanus \n");
+  srand(time(NULL));
+
+  // mfw anvil
+  printf("AGHHHHHHHhhhhhhhhhhhhhhhhhhhhhhhhHHHHH\n");
+  printf("my peanus\n");
   printf("oooooo my pronis\n");
 
   printf("the penis has been destroyed. please generate another\n");
-  printf("penis size = %d\n", penisSize);
+
+  int randSize = rand() % 4;
+
+  // printf("%d\n", randSize);
+  // puts(penisSize[randSize]);
+  printf("penis size = %s\n", penisSize[randSize]);
 
   return 0;
-
-  
 }
