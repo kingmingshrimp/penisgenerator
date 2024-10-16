@@ -1,1 +1,1 @@
-destroys and then generates a new penis
+destroys and then generates your penis
